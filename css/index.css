@@ -3,8 +3,8 @@
 
 
 /* CSS Files Import */
-@import url("sections/fonts.css");
-@import url("sections/layout.css");
+@import url("sections/header.css");
+@import url("sections/main.css");
 
 
 /* // CSS Variables = Reusability // */
@@ -29,8 +29,28 @@
     --darkCardBG: hsl(228, 28%, 20%);
     --darkText: hsl(228, 34%, 66%);
     --darkWhite: hsl(0, 0%, 100%);
+    /* Light Theme Colors */
+    --lightBG: hsl(0, 0%, 100%);
+    --lightTopBG: hsl(225, 100%, 98%);
+    --lightCardBG: hsl(227, 47%, 96%);
+    --lightTextBlue: hsl(228, 12%, 44%);
+    --lightTextBlue2: hsl(230, 17%, 14%);
 }
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--darkBG);
+    color: var(--darkWhite);
+
+    font-family: var(--inter);
+    font-size: 14px;
+}
 
 
 

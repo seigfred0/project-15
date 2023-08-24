@@ -1,0 +1,75 @@
+
+
+body {
+    padding: 1.25rem;
+}
+
+
+/* ///// HEADER SECTION ///// */
+
+.header-title {
+    border-bottom: 1px hsla(228, 34%, 66%, 0.522) solid;
+    padding-bottom: 1.5em;
+}
+
+.header-title h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.10em;
+}
+
+.header-subtitle {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--darkText);
+}
+
+/* Toggle */
+
+.header-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.header-toggle span {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--darkText);
+}
+
+input {
+	display : none;
+}
+
+div label {
+	position: relative;
+	cursor: pointer;
+	display :block;
+	width: 50px;
+	height: 25px;
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+	border-radius: 50px;
+	transition: 300ms linear;
+}
+
+div label:before {
+	position: absolute;
+	top: 50%;
+	left: 4px;
+	transform: translateY(-50%);
+	content: "";
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: var(--darkBG);
+	border-radius: 50%;
+	transition: left 300ms linear;
+}
+
+div input:checked + label:before {
+	left: 28px;
+    background-color: white;
+}

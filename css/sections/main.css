@@ -1,0 +1,112 @@
+.card-container {
+    display: grid;
+    grid-template-rows:  repeat(4, 250px);
+    gap: 1.5em;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+
+    background-color: var(--darkCardBG);
+    border-radius: 5px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* @media (min-width: 500px) {
+    .card-container {
+        display: grid;
+        grid-template-rows:  repeat(4, 200px);
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
+
+/* Main Card Top Colors */
+
+.fb-card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: var(--facebook);
+}
+
+.twitter-card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: var(--twitter);
+}
+
+.instagram-card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, var(--instagram1), var(--instagram2));
+}
+
+.youtube-card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: var(--youtube);
+}
+
+/* Main Cards Information */
+
+.cards-top {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    gap: 0.5em;
+}
+    .cards-top span {
+        font-size: 0.90rem;
+        font-weight: 700;
+        color: var(--darkText);
+    }
+
+.cards-middle {
+    margin-top: 2em;
+}
+    .cards-middle h3 {
+        font-size: 4rem;
+    }
+
+    .cards-middle p {
+        color: var(--darkText);
+        font-size: 1rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+    }
+
+.cards-bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 2.5em;
+    gap: 0.25em;
+}
+    .cards-bottom  {
+        color: var(--limeGreen);
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+.negative {
+    color: var(--youtube);
+}
+
+
+/* /// Sub-cards (Overview) /// */
+
+
+
