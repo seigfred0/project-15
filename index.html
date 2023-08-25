@@ -10,9 +10,8 @@
   <link rel="stylesheet" href="css/index.css">
 
 </head>
-<body>
-
-  <div class="container">
+<body class="dark-mode">
+  <div class="max-container">
     <header>
       <div class="header-title">
         <h1>Social Media Dashboard</h1>
@@ -22,14 +21,14 @@
         <span>Dark Mode</span>
         <div class="header-toggleButton">
           <input type="checkbox" id="toggle-btn">
-          <label for="toggle-btn"></label>
+          <label for="toggle-btn" id="toggle-color"></label>
         </div>
       </div>
     </header>
 
     <main>
       <div class="card-container">
-        <div class="cards fb-card">
+        <div class="cards fb-card DL-mode">
           <div class="cards-top">
             <img src="images/icon-facebook.svg" alt="Facebook Logo">
             <span class="username">@nathanf</span>
@@ -38,13 +37,13 @@
             <h3>1987</h3>
             <p>Followers</p>
           </div>
-          <div class="cards-bottom">
+          <div class="cards-bottom alignCenter">
             <img src="images/icon-up.svg" alt="Increase Arrow">
             <span>12 Today</span>
           </div>
         </div>
 
-        <div class="cards twitter-card">
+        <div class="cards twitter-card DL-mode">
           <div class="cards-top">
             <img src="images/icon-twitter.svg" alt="Twitter Logo">
             <span class="username">@nathanf</span>
@@ -53,13 +52,13 @@
             <h3>1044</h3>
             <p>Followers</p>
           </div>
-          <div class="cards-bottom">
+          <div class="cards-bottom alignCenter">
             <img src="images/icon-up.svg" alt="Increase Arrow">
             <span>99 Today</span>
           </div>
         </div>
 
-        <div class="cards instagram-card">
+        <div class="cards instagram-card DL-mode">
           <div class="cards-top">
             <img src="images/icon-instagram.svg" alt="Instagram Logo">
             <span class="username">@nathanf</span>
@@ -68,13 +67,13 @@
             <h3>11k</h3>
             <p>Followers</p>
           </div>
-          <div class="cards-bottom">
+          <div class="cards-bottom alignCenter">
             <img src="images/icon-up.svg" alt="Increase Arrow">
             <span>1099 Today</span>
           </div>
         </div>
 
-        <div class="cards youtube-card">
+        <div class="cards youtube-card DL-mode">
           <div class="cards-top">
             <img src="images/icon-youtube.svg" alt="Youtube Logo">
             <span class="username">@nathanf</span>
@@ -83,20 +82,134 @@
             <h3>8239</h3>
             <p>Subscribers</p>
           </div>
-          <div class="cards-bottom">
+          <div class="cards-bottom alignCenter">
             <img src="images/icon-down.svg" alt="Increase Arrow">
             <span class="negative">144 Today</span>
           </div>
         </div>
       </div>
-      <div class="subCards">
-        <h2>Overview - Today</h2>
+
+      <h2>Overview - Today</h2>
+
+      <div class="subcard-container">
+        <div class="sub-card DL-mode">
+          <div class="sub-card_top">
+            <span>Page Views</span>
+            <img src="images/icon-facebook.svg" alt="Facebook Logo">
+          </div>
+          <div class="sub-card_bottom">
+            <h4>87</h4>
+            <div class="sub-card__bottom-number alignCenter">
+              <img src="images/icon-up.svg" alt="">
+              <span>3%</span>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="sub-card DL-mode"> 
+          <div class="sub-card_top">
+            <span>Likes</span>
+            <img src="images/icon-facebook.svg" alt="Facebook Logo">
+          </div>
+          <div class="sub-card_bottom">
+            <h4>52</h4>
+            <div class="sub-card__bottom-number alignCenter">
+              <img src="images/icon-down.svg" alt="">
+              <span class="negative">2%</span>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="sub-card DL-mode">
+          <div class="sub-card_top">
+            <span>Likes</span>
+            <img src="images/icon-instagram.svg" alt="Instagram Logo">
+          </div>
+          <div class="sub-card_bottom">
+            <h4>5462</h4>
+            <div class="sub-card__bottom-number alignCenter">
+              <img src="images/icon-up.svg" alt="">
+              <span>2257%</span>
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="sub-card DL-mode">
+          <div class="sub-card_top">
+            <span>Profile Views</span>
+            <img src="images/icon-instagram.svg" alt="Instagram Logo">
+          </div>
+          <div class="sub-card_bottom">
+            <h4>52k</h4>
+            <div class="sub-card__bottom-number alignCenter">
+              <img src="images/icon-up.svg" alt="">
+              <span>1375%</span>
+            </div>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="sub-card DL-mode">
+          <div class="sub-card_top">
+            <span>Retweets</span>
+            <img src="images/icon-twitter.svg" alt="Twitter Logo">
+          </div>
+          <div class="sub-card_bottom">
+            <h4>117</h4>
+            <div class="sub-card__bottom-number alignCenter">
+              <img src="images/icon-up.svg" alt="">
+              <span>303%</span>
+            </div>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="sub-card DL-mode">
+          <div class="sub-card_top">
+            <span>Likes</span>
+            <img src="images/icon-twitter.svg" alt="Twitter Logo">
+          </div>
+          <div class="sub-card_bottom">
+            <h4>507</h4>
+            <div class="sub-card__bottom-number alignCenter">
+              <img src="images/icon-up.svg" alt="">
+              <span>553%</span>
+            </div>
+          </div>
+        </div>
+        <!-- card 7 -->
+        <div class="sub-card DL-mode">
+          <div class="sub-card_top">
+            <span>Likes</span>
+            <img src="images/icon-youtube.svg" alt="Youtube Logo">
+          </div>
+          <div class="sub-card_bottom">
+            <h4>107</h4>
+            <div class="sub-card__bottom-number alignCenter">
+              <img src="images/icon-down.svg" alt="">
+              <span class="negative">19%</span>
+            </div>
+          </div>
+        </div>
+        <!-- card 8 -->
+        <div class="sub-card DL-mode">
+          <div class="sub-card_top">
+            <span>Total Views</span>
+            <img src="images/icon-youtube.svg" alt="Youtube Logo">
+          </div>
+          <div class="sub-card_bottom">
+            <h4>1407</h4>
+            <div class="sub-card__bottom-number alignCenter">
+              <img src="images/icon-down.svg" alt="">
+              <span class="negative">12%</span>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
-
 
 <!--
   <div class="attribution">

@@ -2,6 +2,7 @@
     display: grid;
     grid-template-rows:  repeat(4, 250px);
     gap: 1.5em;
+    margin-bottom: 4em;
 }
 
 .cards {
@@ -18,17 +19,7 @@
     overflow: hidden;
 }
 
-/* @media (min-width: 500px) {
-    .card-container {
-        display: grid;
-        grid-template-rows:  repeat(4, 200px);
-        grid-template-columns: repeat(2, 1fr);
-    }
-} */
-
-
 /* Main Card Top Colors */
-
 .fb-card::before {
     content: "";
     position: absolute;
@@ -62,7 +53,6 @@
 }
 
 /* Main Cards Information */
-
 .cards-top {
     display: flex;
     align-items: center;
@@ -90,10 +80,8 @@
     }
 
 .cards-bottom {
-    display: flex;
-    align-items: center;
     margin-top: 2.5em;
-    gap: 0.25em;
+
 }
     .cards-bottom  {
         color: var(--limeGreen);
@@ -106,7 +94,47 @@
 }
 
 
-/* /// Sub-cards (Overview) /// */
+/* Sub-cards (Overview) */
+
+.subcard-container {
+    display: grid;
+    grid-template-rows:  repeat(8, 150px);
+    gap: 1.5em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.sub-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 2em;
+    background-color: var(--darkCardBG);
+    border-radius: 5px;
+}
+
+.sub-card_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    .sub-card_top span {
+        font-weight: 700;
+        color: var(--darkText);
+    }
 
 
+.sub-card_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+    .sub-card__bottom-number {
+        color: var(--limeGreen);
+        font-weight: 700;
+    }
+
+
+    
 

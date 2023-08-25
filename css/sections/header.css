@@ -50,7 +50,6 @@ div label {
 	display :block;
 	width: 50px;
 	height: 25px;
-    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 	border-radius: 50px;
 	transition: 300ms linear;
 }
